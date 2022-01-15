@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Mate+SC&family=PT+Sans&family=Zen+Kurenaido&display=swap');
+
+
+* {
+  margin:0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html {
+  background: #FDFEFE;
+  font-family: 'Abel', sans-serif;
+}
+
+nav { 
+  width: 20%; 
+  height: 100%; 
+  font-size: 1.4em;
+  position: fixed; 
+  overflow: auto; 
+  line-height: 2;
+  border: 1px solid black;
+  
+}
+nav > ul {
+  list-style: none; 
+  height: 100%; 
+  padding: 10px; 
+  margin: 10px; 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black; 
+}
+
+.nav-link:hover {
+  font-size: 1.6em;
+  font-weight: 600; 
+}
+
+.list,section,article > ul {
+  margin-left:10%;
+  padding: 10px;
+  line-height: 1.5; 
+  font-size: 1em; 
+}
+.viewer { 
+  background: #909497;
+  border-radius: 10px; 
+  margin: 10px; 
+  padding: 10px; 
+}
+
+.code {
+  border: 2px solid #D7DBDD;
+  background: #FDFEFE; 
+  padding: 10px 20px; 
+  margin: 20px 20px; 
+ 
+}
+
+section {
+  padding: 10px;  
+  padding: 1px; 
+}
+
+#main-doc {
+  margin-left: 15%;
+  width: 80%;
+  position: absolute; 
+  top: 0; 
+}
+
+table, th, td {
+  border: 1px solid black; 
+  text-align: center; 
+ 
+}
+
+table {
+  border-collapse: collapse;
+ font-size: 1.3em; 
+  width: 60%; 
+  margin: 20px;
+  
+}
+
+tr:nth-child(even) {
+  background: #D7DBDD
+}
+
+p {
+  line-height:1.8; 
+  font-size: 1.3em;
+   
+}
+header {
+  font-family: 'Abel', sans-serif;
+  font-size: 1.8em;
+  padding: 10px; 
+}
+
+h4 {
+  font-size: 1.4em; 
+  padding: 5px; 
+}
+
+@media screen and (max-width:800px) {
+ 
+  nav {
+    font-size: 0.9em; 
+  }
+  .nav-link:hover {
+  font-size:1em; 
+  font-weight: 600; 
+}
+  header {
+    font-size: 1.2em;
+  }
+  #main-doc {
+    font-size:0.8em; 
+  }
+}
+
+

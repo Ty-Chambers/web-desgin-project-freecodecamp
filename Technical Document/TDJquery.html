@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html xml:lang>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JQuery Tutorial</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="TDstyle.css">
+    </head>
+    <nav id ="navbar">
+        <header>JQuery Tutorial</header>
+        <ul>
+          <li><a class="nav-link" href="#JQuery_Intro">JQuery Intro</a></li>
+          <li><a class="nav-link" href="#What_You_should_Already_Know">What You Should Already Know</a></li>
+          <li><a class="nav-link" href="#What_is_JQuery?">What is JQuery?</a></li>
+          <li><a class="nav-link" href="#Why_JQuery?">Why JQuery?</a></li>
+          <li><a class="nav-link" href="#Adding_JQuery_To_Your_Web_Pages">Adding JQuery To Your Web Pages</a></li>
+          <li><a class="nav-link" href="#Downloading_JQuery">Downloading JQuery</a></li>
+          <li><a class="nav-link" href="#JQuery_CDN">JQuery CDN</a></li>
+          <li><a class="nav-link" href="#JQuery_Syntax">JQuery Syntax</a></li>
+          <li><a class="nav-link" href="#The_Document_Ready_Event">The Document Ready Event</a></li>
+          <li><a class="nav-link" href="#JQuery_Selectors">JQuery Selectors</a></li>
+          <li><a class="nav-link" href="#The_Element_Selector">The Element Selector</a></li>
+          <li><a class="nav-link" href="#The_#id_Selector">The #id Selector</a></li>
+          <li><a class="nav-link" href="#The_.class_Selector">The .class Selector</a></li>
+          <li><a class="nav-link" href="#Functions_In_A_Separate_File">Functions In A Separate File</a></li>
+          <li><a class="nav-link" href="#What_Are_Events">What Are Events</a></li>
+          <li><a class="nav-link" href="#JQuery_Syntax_For_Event_Methods">JQuery Syntax For Event Methods</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+          </ul>
+    </nav> 
+      <main id="main-doc"> 
+        <section class="main-section" id="JQuery_Intro">
+          <header>JQuery Intro</header> 
+          <p> The purpose of jQuery is to makr it much easier to use JavaScript on your website.</p>
+        </section> 
+        <section class="main-section" id="What_You_should_Already_Know">
+          <header>What You Should Already Know</header> 
+          <article>
+            <p>Before you start studying jQuery, you should have a basic knowledge of:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="What_is_JQuery?">
+          <header>What is JQuery?</header>
+          <article>
+            <p>jQuery is a lightweight, "write less, do more", JavaScript Library.</p>
+            <p>The purpose of jQuery is to make it much easier to use JavaScript on your webiste.</p>
+            <p>jQuery takes a lot of common task that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code. </p>
+           <p>jQuery also simplifies a lot of the complicated things from JaaScript,like AJAX calls and DOM manipulation</p>
+            <p> The jQuery library contains the following features: </p> 
+            <ul>
+              <li>HTML/DOM manipulation</li>
+              <li>CSS manipulation</li>
+              <li>HTML event methods</li>
+              <li>Effects and animations</li>
+              <li>AJAX</li>
+              <li>Ulilities</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Why_JQuery?">
+          <header>Why JQuery?</header> 
+          <article>
+            <p> There are lots of other JavaScript libraries out there, but jQuery is probably the most popular, andalso the most extendable</p>
+            <p> Many of the biggesr companies on the Web use jQuery, such as:</p> 
+            <ul>
+              <li>Google</li>
+              <li>Mircodoft</li>
+              <li>IBM</li>
+              <li>Netflix</li>
+            </ul>
+          </article>
+        </section>
+          <section class="main-section" id="Adding_JQuery_To_Your_Web_Pages">
+            <header>Adding JQuery To Your Web Pages</header>
+            <article>
+              <p> There are several ways to start using jQuery on your web site, You can: </p>
+              <ul>
+                <li>Download the jQuery library from jQuery.com</li>
+                <li>Include jQuery from a CDN, like Google</li>
+              </ul> 
+            </article>
+            </section>
+        <section class="main-section" id="Downloading_JQuery">
+          <header>Downloading JQuery</header> 
+          <p> There are two versions of jQuery available for downloading: </p>
+          <div class="list"> 
+          <ul>
+            <li>Production version - this is for your live website because it has been minifield and compressed</li>
+            <li>Development version - this is for testing and development (uncompressed and readable code)</li>
+          </ul> 
+          </div> 
+            <p>Both version can be downloaded from <a href="https://jquery.com/download/" target="_blank">jQuery.com</a></p>
+          <div class="code">
+            <code>
+              head
+                script src="jquery-3.5.1.min.js" /script 
+                </code>
+          </div>
+          </section>
+        <section class="main-section" id="JQuery_CDN">
+          <header>JQuery CDN</header> 
+          <p> If you don't want to download and host jQuery yourself, you can include it from a CDN(Content Delivery Network). </p>
+          <p> Google is an example of someone who host jQuery: </p>
+          <div class="viewer">
+            <h3> Google CDN:</h3> 
+            <div class="code">
+              <p>  head    </p> 
+              <p> script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" /script </p>
+              <p> head </p> 
+            </div>
+          </div>
+        </section>
+            <section class="main-section" id="JQuery_Syntax">
+              <header>JQuery Syntax</header>
+              <p> The jQuery syntaz is tailor-made for <strong>selecting</strong> HTML elements and performing some <strong>action</strong> on the elements(s). </p>
+              <p> Basic syntax is: <strong>$(selector).action()</strong></p>
+              <div class="list">
+              <ul>
+                <li>A $ sign to define/access jQuery</li>
+                <li> A (selector) to "query (or find)" HTML elements </li>
+                <li> A jQuery action() to be performed on the element(s)</li>
+              </ul>
+              </div>
+                <p>Examples:</p>
+              <div class="list">
+              <ul>
+                <li><code>$(this).hide()</code>- hides the current element.</li>
+                <li><code>$("p").hide()</code>- hides all p elements</li>
+                <li><code>$(".test").hide()</code> - hides all elements with class ="test"</li>
+                <li><code>$("#test").hide()</code> - hides the element with id="test". </li>
+                </ul>
+              </div> 
+              </section>
+        <section class="main-section" id="The_Document_Ready_Event">
+          <header>The Document Ready Event</header>
+          <p> You might have noticed that all jQuery methods in our examples, are inside a document ready event: </p> 
+          <div class="code">
+            <code> $(document).ready(function(){ </code>
+            <p style="color:#58D68D"> //jQuery methods go here... </p>
+            <code> }); </code>
+          </div> 
+            <p> This is to prevent any jQuery code from running before the document is finished loading (is ready). </p>
+            <p> It is good practice to wait for the document to be fully loaded and ready before working with it. This is allows you to have your JavaScript code before the body of your document, in the head section. </p>
+            <p> Here are some examples of actions that can fail if methods are run before the document is fullt loaded: </p> 
+          <div class="list"> 
+            <ul>
+              <li>Trying to hide an element that is not created yert </li>
+              <li> Trying to get the size of an image that is not loaded yet </li>
+            </ul> 
+          </div> 
+            <p> <strong>Tip:</strong> The jQuery team has also created an even shorter method for the document ready event: </p>
+            <div class="code"> 
+              <code>$(function(){</code> 
+              <p style="color:#58D68D"> // jQuery methods go here... </p>
+              <code>});</code> 
+          </div>
+          <p><em>Use the syntax you prefer. We think the document ready event is easier to understand when reading the code.</em></p> 
+          </section>
+              <section class="main-section" id="JQuery_Selectors">
+                <header>JQuery Selectors</header>
+                <p>jQuery selectors allow you to select and manipulate HTML element(s).</p> 
+                <p>jQuery selectors are used to "find" (or select) HTML elements based on their name, id, classes, types, attributes, vaules of attributes and much more. It's based on the existing <u> CSS Selectors,</u> and in addition, it has some own custom slectors. </p> 
+                <p> All selectors in jQuery start with the dollar sign and parenthesse: $(). </p> 
+                </section>
+        <section class="main-section" id="The_Element_Selector">
+          <header>The Element Selector</header> 
+          <p> The jQuery element selector selects elements based on the element name. </p>
+          <p> You can select all <code style="color:#C0392B"> p </code> elements on a page like this: </p> 
+          <div class="code">
+            <code> $("p") </code>
+          </div> 
+          <h4>Example</h4>
+          <p> When a user clicks on a button, all <code style="color:#C0392B">  p  </code> elements will be hidden: </p> 
+          <div class="viewer">
+            <h4>Example</h4> 
+            <div class="code">
+              <h4>Example</h4>
+              <p> $(document).ready(function()){</p> 
+              <p>$("button").click(function(){</p>
+              <p> $("p").hide();</p>
+              <p> });</p>
+              <p> });</p>  
+            </div> 
+          </div>
+        </section>
+        <section class="main-section" id="The_#id_Selector">
+          <header>The #id Selector</header> 
+          <p> The jQuery <code style="color:red;">#id</code> selector the id attribute of an HTML tag to find the specific element. </p> 
+          <p> An id should be unique within a page, so you should use the #id selector when you want to find a single, unique element.</p>
+          <p> To find an element with specific id, write a hash character, followed by the id of the HTML element: </p> 
+          <div class="code">
+            <code> $(test")</code>
+          </div>
+            <h4>Example</h4>
+            <p> when a user clicks on button, element with id="test" will be hidden:</p>
+            <div class="viewer">
+              <h4>Example</h4>
+              <div class="code">
+                <p> $(document).ready(function(){</p>
+                <p>$("button").click(function(){</p>
+                <p>$("#test").hide();</p>
+                <p>});</p>
+                <p>});</p>
+              </div>
+              </div>
+        </section>
+        <section class="main-section" id="The_.class_Selector">
+          <header>The .class Selector</header> 
+          <p> The jQuery <code style="color:red;">.class</code> selector finds elements with a specific class. </p> 
+          <p> to find elements with a specific class, write a period character, followed by the name of the class:</p> 
+          <div class="code">
+            <code> $(test")</code>
+          </div>
+          <h4> Example </h4>
+          <p> when a user clicks on a button, the elements with class="test" will be hidden: </p>
+           <div class="viewer">
+              <h4>Example</h4>
+              <div class="code">
+                <p> $(document).ready(function(){</p>
+                <p>$("button").click(function(){</p>
+                <p>$(".test").hide();</p>
+                <p>});</p>
+                <p>});</p>
+              </div>
+              </div>
+        </section>
+        <section class="main-section" id="Functions_In_A_Separate_File">
+          <header>Functions In A Separate File</header> 
+          <p> If your website contains a lot of pages, and you want your jQuery functions to be easy to maintain, you can put your jQuery functions in a separate .js file.</p> 
+          <p> when we demonstrate jQuery in this tutorial, the functions are added directly into the <code style="color:red;">  head  </code> section. However, sometimes it is preferable to place them in a separate file, like this (use the src attribute to refer to the .js file): </p> 
+            <div class="viewer">
+              <div class="code">
+                <p style="color:red;">  head  </p>
+                  <p>script src= " https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "  /script </p>
+                <p> <code> script src ="my_jquery_functions.js"  /script </code></p>
+                <p style="color:red;">  head  </p>
+                      </div>
+                    </div>
+        </section>
+                <section class="main-section" id="What_Are_Events">
+                  <header>What Are Events</header>
+                    <p> All the different visitor's actions that a web page can respond to are called events. </p> 
+                  <p> An event represents the precise moment when something happens </p>
+                  <p> Examples </p>
+                  <div class="list"> 
+                  <ul>
+                    <li> moving a mouse over an element </li> 
+                    <li> selecting a radio button </li> 
+                    <li> clicking on an element </li> 
+                  </ul> 
+                  </div> 
+                  <p> The term <strong> "fire/fired" </strong> is often used with events. Example: "the keypress event is fired, the moment you press a key". </p> 
+                  <p> Here are some common Dom events: </p>
+                  <table style= "width:60%"> 
+                    <tr>
+                      <th id="Mouse">Mouse Events </th>
+                      <th id="Keyboard"> Keyboard Events </th> 
+                      <th id="Form Events"> Form Events </th> 
+                      <th id="Document"> Document/Window Events </th> 
+                    </tr> 
+                    <tr> 
+                      <td> Click </td>
+                      <td> Keypress </td>
+                      <td> Submit </td> 
+                      <td> load </td> 
+                    </tr> 
+                    <tr> 
+                      <td>dblclick </td> 
+                      <td> keydown </td>
+                      <td> change </td> 
+                      <td> resize </td> 
+                    </tr> 
+                    <tr> 
+                      <td> mouseenter </td> 
+                      <td> keyup </td> 
+                      <td> focus </td> 
+                      <td> scroll </td> 
+                    </tr> 
+                    <tr> 
+                      <td> mouseleave </td> 
+                      <td> </td> 
+                      <td> blur </td> 
+                      <td> unload </td> 
+                    </tr> 
+                  </table> 
+                  </section>
+        <section class="main-section" id="JQuery_Syntax_For_Event_Methods">
+          <header>JQuery Syntax For Event Methods</header> 
+          <p> In jQuery, most DOM events have an equivalent jQuery methods. </p> 
+          <p> To assign a click event to all paragraphs on a page, you can do this: </p> 
+          <div class="code">
+            <p> $ ("p").click(); </p> 
+          </div>
+          <p> The next stepis to define what should happen whenn the event fires. You must pass a function to the event: </p> 
+          <div class="code"> 
+            <p> $("p").click(function(){</p> 
+            <p style="color:green;"> //action goes here!! </p> 
+            <p> }); </p> 
+          </div> 
+        </section>
+        <section class="main-section" id="Reference"> <header>Reference</header> 
+          <p> All the documentation and infromation was taken from <a href="https://www.w3schools.com/jquery/default.asp" target="_blank">w3school</a></p> 
+        </section>
+      </main> 
+</html>

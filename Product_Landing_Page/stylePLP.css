@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Petemoss&family=Satisfy&family=Yuji+Boku&display=swap');
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+
+html {
+  background-color: #E5E7E9; 
+}
+
+header { 
+  background: #F8F9F9;
+  font-family: 'Dancing Script', cursive;
+  position: fixed;
+  top: 0; 
+  padding: 0px 10px; 
+  width: 100%; 
+  height: 100px; 
+}
+nav {
+  display: flex;
+  top: 0; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  align-items: center; 
+}
+.logo {
+  margin-right: auto;
+  width: 100px; 
+}
+img {
+  width: 100%;  
+  height: 100%;
+}
+
+.nav-link {
+  list-style: none; 
+  margin-left: 20px; 
+  font-size: 20px;
+  font-family: ; 
+  text-decoration: none;
+  color: black; 
+}
+li {
+  display: inline-block; 
+  padding: 10px 0px; 
+  margin-right: 50px; 
+}
+
+li > a:hover {
+  font-size: 30px;
+}
+
+h2,
+h3, 
+h4 {
+  font-family: 'Yuji Boku', serif; 
+  font-size: 30px;
+}
+input {
+  height: 35px; 
+  width: 20%; 
+}
+body {
+  margin-top: 120px;
+  margin-bottom: 100px; 
+  text-align: center;
+   
+}
+
+.sub {
+  height: auto; 
+  width: auto; 
+  border: none; 
+  border-radius: 20px; 
+  box-shadow: 0 8px grey; 
+  margin: 15px;
+  padding: 15px 25px; 
+  cursor: pointer; 
+  font-size: 22.5px;
+  font-weight: 600; 
+}
+  
+.sub:hover {
+    background-color: #F7DC6F; 
+  }
+.sub:active {
+  background-color: #F7DC6F; 
+  box-shadow: 0 4px grey; 
+  transform: translateY(5px);
+}
+
+.single_d,
+.monthly_d,
+.text_d {
+  display: flex; 
+  float: left; 
+  border: 2px solid red;
+  align-items: center; 
+  height: 200px; 
+  width: 300px; 
+  margin: 10px 10px;
+  
+}
+
+.donate {
+  display: flex; 
+  height: 300px;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
+}
+
+.donate > div {
+  border: 2.5px solid #909497; 
+  width: 300px;
+  line-height: 1.5; 
+  text-align: center; 
+  margin: 10px; 
+}
+
+#need-help { 
+  margin-bottom: 50px;
+  line-height: 1.8;  
+}
+
+#our-work {
+  margin-bottom: 50px; 
+  line-height: 1.8; 
+}
+
+#get-involed {
+  line-height: 1.8; 
+}
+
+@media screen and (min-width:600px) {
+ 
+  
+  .nav-link {
+    font-size: 15px; 
+  }
+  
+  input {
+    width: 200px; 
+  }
+}

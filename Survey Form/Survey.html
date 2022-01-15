@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>One Piece Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="SF.css">
+    </head>
+    <header>
+        <h1 id="title">
+            One Piece Survey Form
+        </h1>
+        <p id="description">
+            Thank you for taking the time to share with us your Love of One Piece 
+        </p>
+    </header>
+    <body>
+        <div class="box"> 
+            <form id="survey-form">
+                <label id="name-label" for="name"> Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your First Name" required>
+                <br>
+                <label for="surname"> Surname: </label>
+                <input type="text" id="surname" placeholder="Enter Your Last Name" required> 
+                <br> 
+                <label id="number-last" for="number">Age</label>
+                <br> 
+                <input type="number" name="age" id="number" min="15" max="100" placeholder="age" required>
+                <br> 
+                <label for="email" id="email-label"> Email: </label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <p> What best describe your current occupation ?</p>
+                <select name="role" id="dropdown">
+                    <option value="student">Student</option>
+                    <option value="Job">Full-Time Employeed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="preferNo">Prefer not say</option>
+                </select>
+                <label for="Characters" name="Characters">
+                    <br> 
+                    Who is your favourite crew member? 
+                </label>
+                <br> 
+                <input list="Characters" name="Characters" id="Straw-hat" placeholder="Choose your straw hat">
+                <datalist id="Characters">
+                    <option value="Monkey D Luffy">Luffy</option>
+                    <option value="Roronoa Zoro">Roronoa Zoro</option>
+                    <option value="Ussop">Ussop</option>
+                    <option value="Nico Robin">Robin</option>
+                    <option value="Tony Tony Chopper"></option>
+                    <option value="Jinbe"></option>
+                    <option value="Nami"></option>
+                    <option value="Vinsmoke Sanji"></option>
+                </datalist>
+                <p>Choose your Organizations</p>
+                <input type="radio" id="Marines" name="Organization" value="Marines">
+                <label for="Marines"> Marines </label>
+                <br>
+                <input type="radio" id="Pirates" name="Organiztion" value="Pirates">
+                <label for="Pirates"> Pirates </label>
+                <br> 
+                <input type="radio" id="Warlord" name="Organiztion" value="Warlord">
+                <label for="Warlord"> Warlord </label>
+                <br> 
+                <input type="radio" id="Emperors" name="Organization" value="Emperors">
+                <label for="Emperors">Four Emperors</label>
+                <br> 
+                <input type="radio" id="Government" name="Organization" value="Government">
+                <label for="Government"> World Government</label>
+                <br>
+                <input type="radio"  id="Army" name="Organization"  value="Army">
+                <label for="Army"> Revolutionary Army </label>
+                
+                <p> What Your Favourite One Piece Movie ? 
+                <span>  ( remake not included ) </span> </p> 
+                <input type="checkbox" id="movie1" name="movie1" value="THE_MOVIE">
+                <label for="the_movie"> One Piece: The Movie </label>
+                <br>
+                <input type="checkbox" id="movie2" name="movie2" value="Clockwork_Island">
+                <label for="movie2"> One Piece: Clockwork Island Adventure</label>
+                <br>
+                <input type="checkbox" id="movie3" value="Dead_end">
+                <label> Piece: Dead End no Boken</label>
+                <br>
+                <input type="checkbox" name="movie4" value="Cursed_sword">
+                <label> Piece: The Cursed Holy Sword</label>
+                <br>
+                <input type="checkbox" name="movie5" value="Baron_Omatsuri">
+                <label> Piece: Baron Omatsuri and the serect Island</label>
+                <br>  
+                <input type="checkbox" name="movie6" value="Mechanical_solider">
+                <label> Piece: The Giant Mechanical Soldier of Karakuri Castle </label>
+                <br> 
+                <input type="checkbox" name="movie7" value="Strong_World">
+                <label> Piece: Strong World </label>
+                <br> 
+                <input type="checkbox" name="movie8" value="Straw_hat"> 
+                <label> One Piece 3D: Straw Hat Chase </label>
+                <br> 
+                <input type="checkbox" name="movie9" value="Z">
+                <label> Piece: Gold </label>
+                <br> 
+                <input type="checkbox" name="movie10" value="stampede">
+                <label>One Piece: Stampede </label> 
+                <p> Anything you would like to add </p>
+                <textarea> Additaional comments...</textarea> 
+                <button type="submit" id="submit"> Submit</button>
+                
+            </form>
+        </div>
+       
+        
+        
+    </body>
+</html>
